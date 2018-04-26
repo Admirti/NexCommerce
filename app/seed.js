@@ -31,61 +31,61 @@ var mainCatalog, home, books, clothing, Phones;
 
 Catalog
   .find({})
-//   .remove()
-//   .then(function () {
-//     return Catalog.create({ name: 'All'});
-//   })
-//   .then(function (catalog) {
-//     mainCatalog = catalog;
-//     return mainCatalog.addChild({name: 'Phones'});
-//   })
-//   .then(function (category) {
-//     Phones = category._id; 
-//     // return mainCatalog.addChild({name: 'Books'});
-//   })
-//   // .then(function (category) {
-//   //   books = category._id;
-//   //   return mainCatalog.addChild({name: 'Clothing'});
-//   // })
-//   // .then(function (category) {
-//   //   clothing = category._id;
-//   //   return Product.find({}).remove({});
-//   // })
-//   .then(function() {
-//     return Product.create({
-//       title: 'Iphone 7s',
-//       imageUrl: '/assets/uploads/apple-iphone-7',
-//       price: 250,
-//       stock: 1,
-//       categories: [Phones],
-//       description: 'Used Iphone 7s'
-//     }, 
-//     {
-//       title: 'Iphone 7s',
-//       imageUrl: '/assets/uploads/apple-iphone-7',
-//       price: 250,
-//       stock: 1,
-//       categories: [Phones],
-//       description: 'Used Iphone 7s'
-//     },
-//     {
-//       title: 'Iphone 7s',
-//       imageUrl: '/assets/uploads/apple-iphone-7',
-//       price: 250,
-//       stock: 1,
-//       categories: [Phones],
-//       description: 'Used Iphone 7s'
-//     },
-//     {
-//       title: 'Iphone 7s',
-//       imageUrl: '/assets/uploads/apple-iphone-7',
-//       price: 250,
-//       stock: 1,
-//       categories: [Phones],
-//       description: 'Used Iphone 7s'
-//     }
-//   );
-//   })
+  // .remove({})
+  // .then(function () {
+  //   return Catalog.create({ name: 'All'});
+  // })
+  // .then(function (catalog) {
+  //   mainCatalog = catalog;
+  //   return mainCatalog.addChild({name: 'Phones'});
+  // })
+  // .then(function (category) {
+  //   Phones = category._id; 
+  //   // return mainCatalog.addChild({name: 'Books'});
+  // })
+  // // .then(function (category) {
+  // //   books = category._id;
+  // //   return mainCatalog.addChild({name: 'Clothing'});
+  // // })
+  // // .then(function (category) {
+  // //   clothing = category._id;
+  // //   return Product.find({}).remove({});
+  // // })
+  // .then(function() {
+  //   return Product.create({
+  //     title: 'Iphone 7s',
+  //     imageUrl: '/assets/uploads/apple-iphone-7',
+  //     price: 250,
+  //     stock: 1,
+  //     categories: [Phones],
+  //     description: 'Used Iphone 7s'
+  //   }, 
+  //   {
+  //     title: 'Iphone 7s',
+  //     imageUrl: '/assets/uploads/apple-iphone-7',
+  //     price: 250,
+  //     stock: 1,
+  //     categories: [Phones],
+  //     description: 'Used Iphone 7s'
+  //   },
+  //   {
+  //     title: 'Iphone 7s',
+  //     imageUrl: '/assets/uploads/apple-iphone-7',
+  //     price: 250,
+  //     stock: 1,
+  //     categories: [Phones],
+  //     description: 'Used Iphone 7s'
+  //   },
+  //   {
+  //     title: 'Iphone 7s',
+  //     imageUrl: '/assets/uploads/apple-iphone-7',
+  //     price: 250,
+  //     stock: 1,
+  //     categories: [Phones],
+  //     description: 'Used Iphone 7s'
+  //   }
+  // );
+  // })
   .then(function () {
     console.log('Finished populating Products with categories');
   })
