@@ -3,7 +3,7 @@ angular.module('mean')
 .config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider){
     $stateProvider
     .state('home',{
-         url: '/home',
+         url: '/',
          templateUrl:'views/home.html'
      })
      .state('products', {
