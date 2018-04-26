@@ -1,0 +1,690 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $text-color;
+  height: 100%;
+}
+
+// Divider
+
+hr.dotted_divider_center {
+  border: 0 none;
+  border-top: $five dotted $text_color;
+  background: none;
+  height: 0;
+  width: $twenty-five;
+}
+
+hr.dotted_divider_left {
+  border: 0 none;
+  border-top: $five dotted $text_color;
+  background: none;
+  height: 0;
+  width: $twenty-five;
+  margin: $twenty $zero;
+}
+
+// Header Webinar
+#webinar {
+  height: 100vh;
+  background-position: center center;
+  background: #3023ae; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #3023ae 0%, #c86dd7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #3023ae 0%, #c86dd7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #3023ae 0%, #c86dd7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3023ae', endColorstr='#c86dd7', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+  text-align: center;
+  @media (max-width: $screen-xs-max) {
+    height: auto;
+  }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    height: auto;
+  }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+    height: auto;
+  }
+
+  // iPad with portrait orientation.
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    height: 1024px;
+  }
+
+  //iPad with landscape orientation.
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    height: 768px;
+  }
+  .header_intro {
+    padding: $fifty;
+    margin: $forty-five $zero;
+    background: $white url(../images/header_illustration_01.svg) no-repeat;
+    background-position: bottom center;
+    min-height: 640px;
+    @media (max-width: $screen-xs-max) {
+      padding: $twenty-five $ten;
+      background: $white url(../images/header_illustration_01.svg) no-repeat;
+      background-position: bottom center;
+      min-height: 340px;
+      background-size: contain;
+
+    }
+    @media screen and (min-width: 1900px) {
+      margin: $hundred-seventy $zero;
+    }
+  }
+  h1 {
+    font-size: (ceil($font-size-h1 * 1.2));
+    font-weight: 800;
+    margin: $fifty $zero;
+    @media (max-width: $screen-xs-max) {
+      font-size: (ceil($font-size-h1 / 1.2));
+    }
+
+  }
+  h2 {
+    color: $primary;
+    letter-spacing: $letter_spacing_lg;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+  }
+  .cta {
+    margin-bottom: $hundred;
+  }
+}
+
+// Tutors Section
+#tutors {
+  background-color: darken($light_bg, 2%);
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(255, 255, 255, 1) 1px, rgba(255, 255, 255, 1) 10px);
+  padding: $hundred $zero;
+  @media (max-width: $screen-xs-max) {
+    padding: $fifty $zero;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: xx-large;
+    text-align: center;
+  }
+  .tutors_image {
+    margin: $fifty $zero;
+    img {
+      border: 3px solid $primary;
+    }
+  }
+  .tutors_info {
+    h3 {
+      font-family: 'Droid Serif', serif;
+      font-weight: 700;
+      text-align: center;
+      color: $primary;
+      margin-bottom: $fifty;
+    }
+    p {
+      font-family: 'Droid Serif', serif;
+    }
+    line-height: 21px;
+  }
+
+}
+
+// Webinar Info Section
+#webinar_info {
+  background: $light_bg;
+  border-top: 1px solid $light_border;
+  border-bottom: 1px solid $light_border;
+  padding: $hundred $zero;
+  @media (max-width: $screen-xs-max) {
+    padding: $fifty $zero;
+  }
+  h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  p.subheading {
+    text-align: center;
+    font-size: medium;
+  }
+  .features_wrap {
+    margin-top: $fifty;
+    .webinar_feature {
+      margin-bottom: $fifty;
+      h3 {
+        color: $primary;
+        font-weight: 700;
+        font-size: $font-size-h4;
+      }
+      p {
+        font-family: 'Droid Serif', serif;
+        font-size: small;
+        line-height: 21px;
+      }
+    }
+  }
+  .cta {
+    margin-top: $fifty;
+    text-align: center;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 0;
+    }
+  }
+}
+
+// Footer
+footer {
+  background: $primary;
+  padding: $twenty-five $zero $ten;
+  color: $white;
+  .copyright {
+    font-size: smaller;
+  }
+  .privacy {
+    text-align: right;
+    font-size: smaller;
+    @media (max-width: $screen-xs-max) {
+      text-align: left;
+    }
+    a {
+      color: $white;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $text-color
+      }
+    }
+  }
+}
+
+// Additional Components
+
+// Header Webinar 01
+#webinar_01 {
+  height: 100vh;
+  background-position: center center;
+  background: $white url(../images/header_illustration_01.svg) no-repeat;
+  background-position: bottom center;
+  text-align: center;
+  @media (max-width: $screen-xs-max) {
+    background-size: 1100px;
+  }
+  .header_intro {
+    padding: $fifty;
+    margin: $forty-five $zero;
+    @media screen and (min-width: 1900px) {
+      margin: $hundred-seventy $zero;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin: $twenty-five $zero;
+    }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      margin: $eighty $zero;
+    }
+  }
+  h1 {
+    font-size: (ceil($font-size-h1 * 1.5));
+    font-weight: 800;
+    margin: $fifty $zero;
+    @media (max-width: $screen-xs-max) {
+      font-size: (ceil($font-size-h1 / 1.4));
+      line-height: 32px;
+      margin: $twenty-five $zero;
+    }
+  }
+  h2 {
+    color: $primary;
+    letter-spacing: $letter_spacing_lg;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    @media (max-width: $screen-xs-max) {
+      font-size: large;
+      line-height: 26px;
+    }
+  }
+  .cta {
+    margin-bottom: $hundred;
+  }
+}
+
+// Header Webinar 02
+#webinar_02 {
+  height: 100vh;
+  background-position: center center;
+  background: lighten($primary, 30%) url(../images/header_image_01.jpg) no-repeat;
+  background-position: bottom center;
+  text-align: center;
+  background-size: cover;
+  .header_intro {
+    padding: $fifty;
+    margin: $forty-five $zero;
+    @media screen and (min-width: 1900px) {
+      margin: $hundred-seventy $zero;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin: $twenty-five $zero;
+    }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      margin: $hundred $zero;
+    }
+  }
+  h1 {
+    font-size: (ceil($font-size-h1 * 1.5));
+    font-weight: 800;
+    margin: $fifty $zero;
+    @media (max-width: $screen-xs-max) {
+      font-size: (ceil($font-size-h1 / 1.4));
+      line-height: 32px;
+      margin: $twenty-five $zero;
+    }
+  }
+  h2 {
+    color: $primary;
+    letter-spacing: $letter_spacing_lg;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    @media (max-width: $screen-xs-max) {
+      font-size: large;
+      line-height: 26px;
+    }
+  }
+  .cta {
+    margin-bottom: $hundred;
+  }
+}
+
+// Header Webinar 03
+#webinar_03 {
+  height: 100vh;
+  background-position: center center;
+  background: lighten($primary, 30%) url(../images/header_image_02.jpg) no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  overflow: hidden;
+  @media (max-width: $screen-xs-max) {
+    background-position: -480px center;
+    text-align: center;
+  }
+  .header_intro {
+    padding: $fifty $zero;
+    margin-top: $seventy-five;
+    @media screen and (min-width: 1900px) {
+      margin: $hundred-seventy $zero;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin: $seventy-five $zero;
+    }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      margin: $hundred $zero;
+    }
+  }
+  h1 {
+    font-size: (ceil($font-size-h1 * 1.5));
+    font-weight: 800;
+    margin: $thirty $zero;
+    @media (max-width: $screen-xs-max) {
+      font-size: (ceil($font-size-h1 / 1.4));
+      line-height: 32px;
+      margin: $twenty-five $zero;
+    }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      font-size: (ceil($font-size-h1 / .9));
+    }
+  }
+  h2 {
+    color: $primary;
+    letter-spacing: $letter_spacing_lg;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    @media (max-width: $screen-xs-max) {
+      font-size: large;
+      line-height: 26px;
+    }
+  }
+}
+
+// Tutors Section 01
+#tutors_01 {
+  background-color: $white;
+  padding: $hundred $zero;
+  @media (max-width: $screen-xs-max) {
+    padding: $fifty $zero;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: xx-large;
+    text-align: center;
+  }
+  .tutors_wrap {
+    margin: $fifty $zero;
+
+    .tutor_info {
+      h3 {
+        font-family: 'Droid Serif', serif;
+        font-weight: 700;
+        text-align: center;
+        color: $primary;
+        margin: $twenty-five $zero;
+      }
+      p {
+        font-family: 'Droid Serif', serif;
+      }
+      line-height: 21px;
+    }
+  }
+}
+
+// Tutors Section 02
+#tutors_02 {
+  background-color: darken($light_bg, 2%);
+  padding: $hundred $zero;
+  h2 {
+    font-weight: 800;
+    font-size: x-large;
+  }
+  .tutors_wrap {
+    margin: $twenty-five $zero;
+    .tutor_info {
+      h3 {
+        font-family: 'Droid Serif', serif;
+        font-weight: 600;
+        text-align: center;
+        color: $primary;
+        margin: $twenty-five $zero;
+        font-size: $font-size-h4;
+      }
+      p {
+        font-family: 'Droid Serif', serif;
+      }
+      line-height: 21px;
+    }
+  }
+
+}
+
+// Tutors Section 03
+#tutors_03 {
+  padding: $hundred $zero;
+  text-align: center;
+  background: $light_bg url(../images/backgrounds/abstract_bg.svg) no-repeat;
+  background-position: center bottom;
+  h2 {
+    font-weight: 800;
+    font-size: x-large;
+  }
+  .tutors_wrap {
+    margin: $fifty $zero;
+    .tutor_info {
+      background: $white;
+      -webkit-box-shadow: 0 0 2px 0 rgba($text-color, 0.2);
+      -moz-box-shadow: 0 0 2px 0 rgba($text-color, 0.2);
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+      margin-bottom: $thirty;
+      transform: translate(0px, 0px);
+      -webkit-transform: translate(0px, 0px);
+      -moz-transform: translate(0px, 0px);
+      -o-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transition: All .5s ease;
+      -webkit-transition: All .5s ease;
+      -moz-transition: All .5s ease;
+      -o-transition: All .5s ease;
+      .name_tag {
+        width: 100%;
+        position: relative;
+        top: -$forty;
+        margin: 0 auto;
+        h2 {
+          padding: $ten;
+          background: $primary;
+          color: $white;
+          font-size: $font-size-h6;
+          font-weight: 400;
+          text-transform: uppercase;
+          @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            font-size: 11px;
+          }
+          @media (max-width: $screen-xs-max) {
+            font-size: $font-size-h4;
+          }
+        }
+      }
+      .tutor_presentation {
+        padding: $zero $fifteen $zero;
+        position: relative;
+        top: -$twenty-five;
+        p {
+          font-family: 'Droid Serif', serif;
+          font-size: small;
+        }
+      }
+      &:hover {
+        transform: translate(0px, -5px);
+        -webkit-transform: translate(0px, -5px);
+        -moz-transform: translate(0px, -5px);
+        -o-transform: translate(0px, -5px);
+        -ms-transform: translate(0px, -5px);
+        transition: All .5s ease;
+        -webkit-transition: All .5s ease;
+        -moz-transition: All .5s ease;
+        -o-transition: All .5s ease;
+      }
+    }
+  }
+}
+
+// Webinar Info Section 01
+#webinar_info_01 {
+  padding: $hundred $zero;
+  @media (max-width: $screen-xs-max) {
+    padding: $fifty $zero;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  p.subheading {
+    font-size: (ceil($font-size-h1 / 2.7));
+    margin-top: $twenty;
+  }
+  .features_wrap {
+    margin-top: $fifteen;
+    .webinar_feature {
+      margin-bottom: $fifty;
+      h3 {
+        color: $primary;
+        font-weight: 700;
+        font-size: $font-size-h4;
+      }
+      p {
+        font-family: 'Droid Serif', serif;
+        font-size: small;
+        line-height: 21px;
+      }
+    }
+  }
+  .cta {
+    margin-top: $twenty-five;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 0;
+    }
+  }
+}
+
+// Webinar Info Section 02
+#webinar_info_02 {
+  background: $light_bg;
+  padding: $hundred $zero;
+  text-align: center;
+  @media (max-width: $screen-xs-max) {
+    padding: $fifty $zero;
+  }
+  h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  p.subheading {
+    text-align: center;
+    font-size: medium;
+  }
+  .features_wrap {
+    margin-top: $fifty;
+    .webinar_feature {
+      margin-bottom: $fifty;
+      h3 {
+        color: $primary;
+        font-weight: 700;
+        font-size: $font-size-h4;
+      }
+      p {
+        font-family: 'Droid Serif', serif;
+        font-size: small;
+        line-height: 21px;
+      }
+    }
+  }
+  .cta {
+    margin-top: $twenty-five;
+    text-align: center;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 0;
+    }
+  }
+}
+
+// Webinar Info Section 03
+#webinar_info_03 {
+  padding: $hundred $zero;
+  @media (max-width: $screen-xs-max) {
+    padding: $fifty $zero;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  p.subheading {
+    font-size: (ceil($font-size-h1 / 2.7));
+    margin-top: $twenty;
+  }
+  .features_wrap {
+    margin-top: $fifteen;
+    .webinar_feature {
+      margin-bottom: $fifty;
+      h3 {
+        color: $primary;
+        font-weight: 700;
+        font-size: $font-size-h4;
+      }
+      p {
+        font-family: 'Droid Serif', serif;
+        font-size: small;
+        line-height: 21px;
+      }
+    }
+  }
+  .cta {
+    margin-top: $twenty-five;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 0;
+    }
+  }
+}
+
+// Webinar Info Section 04
+#webinar_info_04 {
+  background: $light_bg;
+  padding: $hundred $zero;
+  @media (max-width: $screen-xs-max) {
+    padding: $fifty $zero;
+  }
+  .section_title {
+    padding: $fifteen $zero $thirty $thirty-five;
+    border: 2px solid darken($light_bg, 5%);
+    h2 {
+      font-weight: 700;
+      font-size: x-large;
+    }
+    p.subheading {
+      font-size: (ceil($font-size-h1 / 2.7));
+      margin-top: $twenty;
+    }
+    .cta {
+      margin-top: $twenty-five;
+      @media (max-width: $screen-xs-max) {
+        margin-top: 0;
+      }
+    }
+  }
+  .features_wrap {
+    margin-top: -$five;
+    .webinar_feature {
+      margin-bottom: $twenty;
+      .feature_box {
+        h3 {
+          color: $primary;
+          font-weight: 500;
+          font-size: ceil($font-size-h4 / 1.2);
+        }
+        p {
+          font-family: 'Droid Serif', serif;
+          font-size: small;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
+
+// Footer 01 / Secondary
+#secondary {
+  background: $secondary;
+  padding: $twenty-five $zero $ten;
+  color: $white;
+  .copyright {
+    font-size: smaller;
+  }
+  .privacy {
+    text-align: right;
+    font-size: smaller;
+    @media (max-width: $screen-xs-max) {
+      text-align: left;
+    }
+    a {
+      color: $white;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $text-color
+      }
+    }
+  }
+}
+
+
+// Footer 02 / Light
+#light {
+  background: $light_bg;
+  padding: $twenty-five $zero $ten;
+  color: $text-color;
+  .copyright {
+    font-size: smaller;
+  }
+  .privacy {
+    text-align: right;
+    font-size: smaller;
+    @media (max-width: $screen-xs-max) {
+      text-align: left;
+    }
+    a {
+      color: $text-color;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $primary
+      }
+    }
+  }
+}
+
+

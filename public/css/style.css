@@ -1,0 +1,93 @@
+
+
+@media (min-width: 992px) {
+    .productdescription {
+      /* height: 315px; */
+    }
+  
+    .thumbnail img{
+      height: 300px;
+      width: auto;
+    }
+  }
+  @font-face {
+    font-family: 'Robotos';
+    src: url('../fonts/Roboto.ttf')format('truetype');
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'Robotos' !important;
+  }
+
+
+  #productbg {
+    background-color: white;
+    padding-bottom: 300px;
+  }
+
+  #productedit {
+    background-color: white;
+    padding-bottom: 300px;
+  }
+
+  #productnew {
+    background-color: white;
+    padding-bottom: 300px;
+
+  }
+
+  #productview {
+    background-color: white;
+    padding-bottom: 300px !important;
+
+  }
+
+  #productcheckout {
+    background-color: white;
+  }
+
+  #settings {
+    background-color: white;
+  }
+
+  #login {
+    background-color: white;
+  }
+
+  #signup {
+    background-color: white;
+    /* margin-left: 700px; */
+  }
+
+  #logininput {
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 300px;
+  }
+
+  #signupinput {
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 300px;
+  }
+
+  #checkoutMarginBottom {
+    margin-bottom: 300px;
+  }
+
+  #checkoutside {
+    margin-left: 300px !important;
+  }
+
+  .navbar navbar-white {
+    background-color: white;
+  }
+
+  #webinar{
+    padding-top: 100px;
+  }
+
+  #checkout {
+    margin-left: 710px
+  }

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>Ecommerce 2018</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/design-webinar.css">
+
+	<!-- JS -->
+	<script src="libs/jquery/dist/jquery.js"></script>
+	<script src="libs/angular/angular.min.js"></script>
+	<!-- <script src="libs/angular-route/angular-route.min.js"></script> -->
+	<script src="libs/angular-cookies/angular-cookies.js"></script>
+	<script src="libs/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="libs/angular-resource/angular-resource.js"></script>
+	<!-- <script src="libs/angular-route/angular-route.js"></script> -->
+	<script src="libs/angular-sanitize/angular-sanitize.js"></script>
+	<script src="libs/angular-socket-io/socket.js"></script>
+	<script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="libs/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
+	<script src="libs/braintree-angular/dist/braintree-angular.js"></script>
+	<script src="libs/es5-shim/es5-shim.js"></script>
+	<script src="libs/font-awesome/svg-with-js/js/fontawesome-all.js"></script>
+	<script src="libs/json3/lib/json3.js"></script>
+	<script src="libs/lodash/dist/lodash.js"></script>
+	<script src="libs/ng-file-upload/ng-file-upload-all.js"></script>
+	<script src="libs/ng-file-upload-shim/ng-file-upload-shim.js"></script>
+	<script src="libs/ngCart/dist/ngCart.js"></script>
+
+
+	<script src="js/app.js"></script>
+
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="components/sidebar/sidebar.controller.js"></script>
+	<script src="components/sidebar/sidebar.service.js"></script>
+	<script src="components/auth/auth.service.js"></script>
+	<script src="components/auth/user.service.js"></script>
+	<script src="js/account/account.js"></script>
+	<script src="js/account/settings/settings.controller.js"></script>
+	<script src="js/account/login/login.controller.js"></script>
+	<script src="js/account/signup/signup.controller.js"></script>
+	<script src="js/controllers/AdminCtrl.js"></script>
+	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/controllers/navCtrl.js"></script>
+	<script src="js/controllers/ProductsCtrl.js"></script>
+	<script src="js/services/productsService.js"></script>
+	<script src="components/socket/socket.service.js"></script>
+
+
+	<script src="js/appRoutes.js"></script>
+
+	<!-- <script src="js/app.js"></script> -->
+</head>
+<body ng-app="mean" >
+		<nav class="navbar navbar-white" ng-controller="NavController">
+				<div class="container-fluid">
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/home">NEX</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li ng-repeat="item in nav"><a href="{{item.state}}">{{item.title}}</a></li>
+						<li id="checkout"><a ui-sref="checkout">
+								<ngcart-summary id="cart" template-url="components/ngcart/summary.html"></ngcart-summary>
+								</a>
+							</li>
+					
+						<li id="signup" ng-hide="isLoggedIn()" ui-sref-active="active"><a ui-sref="signup"><i class="fa fa-user-plus"></i> Sign up</a></li>
+						<li id="login" ng-hide="isLoggedIn()" ui-sref-active="active"><a ui-sref="login"><i class="fa fa-sign-in"></i> Login</a></li>
+						<li ng-show="isLoggedIn()"><a ui-sref="logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+					</ul>
+					
+					</div><!--/.nav-collapse -->
+					
+				</div>
+				</nav>
+		<header id="webinar">
+				<div class="container">
+						
+								<div ui-view></div>
+				</div>
+		</header>
+
+		
+
+
+
+
+
+		<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="copyright">
+                    <p>©2018 Home ECommerce</p>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="privacy">
+                    <p><a href="">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
