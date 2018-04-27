@@ -63,9 +63,9 @@ var all = {
   },
 
   braintree: {
-    clientID:       process.env.BRAINTREE_ID || 'id',
-    clientSecret:   process.env.BRAINTREE_SECRET || 'secret',
-    clientMerchant: process.env.BRAINTREE_MERCHANT || 'merchant'
+    clientID:       process.env.BRAINTREE_ID || '5k4k84k4wkynyqdg',
+    clientSecret:   process.env.BRAINTREE_SECRET || '3a6522b86779894de683a9fc97a8a708',
+    clientMerchant: process.env.BRAINTREE_MERCHANT || 'vk6g3v6v9nspnh7z'
   }
 };
 
